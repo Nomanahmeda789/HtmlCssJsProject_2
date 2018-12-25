@@ -1,0 +1,107 @@
+
+.butn:focus{
+    outline: none;
+}
+#slider{
+   background-size:100% 600px; 
+   width: 100%;
+   height: 600px;
+}
+.header{
+    height: 60px;
+    text-shadow: 3px 3px 6px gray;
+}
+.slider{
+    width: 90%;
+    height: 550px;
+    /* border: 1px solid rebeccapurple; */
+    background-image: url('img/1.jpg');
+    background-size: 100% 550px;
+    margin: 20px auto 20px auto;
+    box-shadow: 10px 10px 10px black;
+}
+.butn{
+    width:58px;
+    border: none;
+    position: relative;
+    top: 200px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+.butn:hover{
+    background-color:#202020 ;
+    transition: 0.4s;
+    width: 100px;
+
+}
+.icn{
+    color: #101010;
+}
+.butn:hover .icn{
+    color: white;
+    transition: 0.9s;
+}
+.s_card{
+    width: 15%;
+    height: 50px;
+    /* border: 1px solid gray; */
+    border-left: 15px solid #47bbff;
+    background-color: rgba(237, 234, 234,0.9);
+    /* box-shadow: 3px 3px 10px gray; */
+    position: absolute;
+    left :120px;
+    top: 500px;
+    
+}
+.t_card{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1.3em;
+    position: relative;
+    top: 10px;
+    
+}
+
+@media (min-width:1300px){
+    .t_card{
+    font-size:1.3em;
+    }
+   
+}
+
+@media (min-width:1100px) and (max-width:1299px){
+    .t_card{
+        font-size:1.1em;
+        top: 12px;
+        }
+        
+    
+}
+
+@media (min-width:900px) and (max-width:1099px){
+    .t_card{
+        font-size:0.8em;
+        top: 17px;
+        }
+        
+    
+}
+@media (min-width:700px) and (max-width:899px){
+    .t_card{
+        font-size:0.7em;
+        top: 17px;
+        
+        }
+        
+   
+}
+
+@media (max-width:699px){
+    .t_card{
+        font-size:0.5em;
+        top: 17px;
+        
+        }
+        
+    
+}

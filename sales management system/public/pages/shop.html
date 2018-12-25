@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Merriweather|Pacifico|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="./shop1.css">
+    <title>Sales Management System</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="container-fluid bg-dark header">
+            <div class="container">
+                <div  class="container">
+                    <div class="container">
+
+                        <div class="header1">
+                            <a href="#shop"  class="shop1">Shop</a>
+                            <a href="" class="shop1" data-toggle="modal" data-target="#myModal1">Profile</a>
+                        </div>
+                        <div class="header2">
+                            <a href="./mycart.html" id="mn1" class="dipl">
+                                <i class="fas fa-shopping-cart " style="color:#efb028;font-size:2.5em;display:inline-block;padding:7.5px;"></i>
+                            </a>
+                            <a href="" class="dipl" id="mn2"  style="height:40px;" data-toggle="modal" data-target="#myModal3">Add Item</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- slider -->
+    <div class="container-fluid slider1">
+           
+<div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/13.jpeg" alt="Los Angeles" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3 id="text1">Employee</h3>
+              <p>Hello !! Welcome to Sales Management System</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="../images/5.jpg" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3 id="text2">Employee</h3>
+              <p>Hello !! Welcome to Sales Management System</p>
+            </div>       
+          </div>
+          <div class="carousel-item">
+            <img src="../images/7.jpeg" alt="New York" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3 id="text3">Employee</h3>
+              <p>Hello !! Welcome to Sales Management System</p>
+            </div>   
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <!-- <span class="carousel-control-prev-icon"></span> -->
+          <i class="fas fa-angle-left" style="font-size:6em;"></i>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <!-- <span class="carousel-control-next-icon" style=""></span> -->
+          <i class="fas fa-angle-right" style="font-size:6em;"></i>
+        </a>
+      </div>
+    </div>
+    <!-- shopping -->
+    <div class="container-fluid shoping1" id="shop">
+        <div class="container">
+            <h1 style="font-weight:bold;text-align:center;padding:35px;color:rgb(255, 140, 140);font-family: 'Lobster';letter-spacing:2px;">Choose Your Shirts</h1>
+        </div>
+        <div class="container-fluid cart">
+                
+            <!-- card -->
+            <!-- c1 -->
+            <div class="row" style="display:inline">
+                <div class="col-2.5 card col-card " id="r1">
+                    <img class="card-img-top" src="../images/a.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Black Shirt</h4>
+                        <p class="card-text">Rs. 1,199 </p>
+                         <!-- Button to Open the Modal -->
+                            <button type="button" id="q1" onclick="cart_data('Black Shirt','Rs. 1199','../images/a.jpg')" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Quick View</button>
+   
+                    </div>
+                </div>
+            
+                <div class="col-2.5 card col-card"  id="r2">
+                    <img class="card-img-top" src="../images/b.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Blue Shirt</h4>
+                        <p class="card-text">Rs. 1,399</p>
+                          <!-- Button to Open the Modal -->
+                          <button type="button" id="q2" onclick="cart_data('Blue Shirt','Rs. 1399','../images/b.jpg')" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Quick View</button>
+
+                    </div>
+                </div>
+                <div class="col-2.5 card col-card" id="r3">
+                    <img class="card-img-top" src="../images/c.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Brown Shirt</h4>
+                        <p class="card-text">Rs. 2,199</p>
+                         <button type="button" id="q3" onclick="cart_data('Brown Shirt','Rs. 2199','../images/c.jpg')" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Quick View</button>
+                    </div>
+                </div>
+                  <div class="col-2.5  card col-card" id="r4">
+                          <img class="card-img-top" src="../images/d.jpg" alt="Card image" style="width:100%">
+                          <div class="card-body">
+                            <h4 class="card-title">Violet Shirt</h4>
+                            <p class="card-text">Rs. 1,000 </p>
+                            <button type="button" id="q4" onclick="cart_data('violet Shirt','Rs. 1000','../images/d.jpg')" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Quick View</button>
+                        </div>
+                   </div>
+            </div>
+            <div style="display:inline-block;margin:0px 10px"></div>
+                <!-- c1 end -->
+            <!-- c2 -->
+            <div class="row" style="display:inline">
+                    <div class="col2.5 card col-card" id="r5">
+                        <img class="card-img-top" src="../images/e.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Pink Shirt</h4>
+                            <p class="card-text">Rs. 1,199 </p>
+                            <button type="button" id="q5" onclick="cart_data('Pink Shirt','Rs. 1199','../images/e.jpg')" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Quick View</button>
+                        </div>
+                    </div>
+                
+                    <div class="col-2.5 card col-card" id="r6">
+                        <img class="card-img-top" src="../images/f.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Red Shirt</h4>
+                            <p class="card-text">Rs. 3,199</p>
+                            <button type="button" id="q6" onclick="cart_data('Red Shirt','Rs. 3199','../images/f.jpg')" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="col-2.5 card col-card" id="r7">
+                        <img class="card-img-top" src="../images/g.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Blue Shirt</h4>
+                            <p class="card-text">Rs. 3,000</p>
+                            <button type="button" id="q7" onclick="cart_data('Blue Shirt','Rs. 3000','../images/g.jpg')" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Quick View</button>
+                        </div>
+                    </div>
+                      <div class="col-2.5 card col-card" id="r8">
+                              <img class="card-img-top" src="../images/h.jpg" alt="Card image" style="width:100%">
+                              <div class="card-body">
+                                <h4 class="card-title">Sky Shirt</h4>
+                                <p class="card-text">Rs. 2,099</p>
+                                <button type="button" id="q8" onclick="cart_data('Sky Shirt','Rs. 2099','../images/h.jpg')" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Quick View</button>
+                            </div>
+                       </div>
+                </div>
+            <div style="display:inline-block;margin:0px 10px"></div>
+                
+            <!-- c2 end   -->
+            <!-- c3         -->
+            <div class="row" style="display:inline">
+                <div class="col-2.5 card col-card c1" id="add1">
+                    <img class="card-img-top" src="../images/i.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Pink Shirt</h4>
+                        <p class="card-text">Rs. 1,199 </p>
+                        <button type="button" id="q9" onclick="cart_data('Pink Shirt','Rs. 1199','../images/i.jpg')" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Quick View</button>
+                    </div>
+                </div>
+            
+                <div class="col-2.5 card col-card c1" id="add2">
+                    <img class="card-img-top" src="../images/j.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Gray Shirt</h4>
+                        <p class="card-text">Rs. 3,199</p>
+                        <button type="button" id="q10" onclick="cart_data('Gray Shirt','Rs. 3199','../images/j.jpg')" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Quick View</button>
+                    </div>
+                </div>
+                <div class="col-2.5 card col-card c1" id="add3">
+                    <img class="card-img-top" src="../images/k.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">White Shirt</h4>
+                        <p class="card-text">Rs. 2,000</p>
+                        <button type="button" id="q11" onclick="cart_data('White Shirt','Rs. 2000','../images/k.jpg')" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Quick View</button>
+                    </div>
+                </div>
+                  
+            </div>
+        <!-- c3 end   -->
+        
+        </div>
+    </div>
+    <!--__________________-modal 1_______________________ -->
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header" style="border-bottom:none">
+                <button style="float:right" type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body modal111">
+                    <div class="row modal1">
+                        <div class="col-6 modal11">
+                            <img src="../images/a.jpg" class="modal-img" id="cart_list3">
+                        </div>
+                        <div class="col-6 modal12">
+                            <h2 id="cart_list1">Black Shirt</h2>
+                            <p id="cart_list2">Rs. 1,199</p>
+                            <div><span>Quantity :</span></div>
+                            <select  id="quantity" class="number">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <br>
+                            <button class="btn btn-dark" onclick="bill()" class="modal-btn">Add To Cart</button>
+                        </div>
+                    </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    <!--__________________-modal 2_______________________ -->
+    <!-- Button to Open the Modal -->
+      <!-- The Modal -->
+      <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header" style="text-align:center;border-bottom:none;">
+              <h4 class="modal-title" style="color:rgb(255, 140, 140);width:50%;margin:auto;margin-bottom:-10px">Profile</h4>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body" style="border-bottom:none;">
+              <table class="table">
+                  <tr>  
+                      <td style="border:1px solid lightgray;">
+                          Name 
+                      </td>
+                      <td style="border:1px solid lightgray;" id="profile_name">
+                          
+                      </td>
+                  </tr>
+                  <tr>  
+                        <td style="border:1px solid lightgray;" >
+                            Email 
+                        </td>
+                        <td style="border:1px solid lightgray;" id="profile_email">
+                            nomanahmeda789@gmail.com
+                        </td>
+                    </tr>
+                    <tr>  
+                            <td style="border:1px solid lightgray;">
+                                Date Of Birth 
+                            </td>
+                            <td style="border:1px solid lightgray;" id="profile_date">
+                                    1997-10-20
+                            </td>
+                     </tr>
+                    <tr>  
+                            <td style="border:1px solid lightgray;">
+                                Gender 
+                            </td>
+                            <td style="border:1px solid lightgray;" id="profile_gender">
+                                Male
+                            </td>
+                     </tr>
+              </table>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer" style="border-top:none;">
+              <button type="button" class="btn" style="background-color:#efb028;color:white" data-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>      
+      <!--__________________-modal 3_______________________ -->
+      <!-- The Modal -->
+      <div class="modal" id="myModal3">
+            <div class="modal-dialog">
+              <div class="modal-content">    
+                
+                <!-- Modal body -->
+                <div class="modal-body modal1111">
+                        <div class="row modal1">
+                            <div class="col-6 modal11">
+                                <img src="../images/i.jpg" class="modal-img1" id="cart_list3">
+                            </div>
+                            <div class="col-6 modal12">
+                                <h2 id="cart_list1">Pink Shirt</h2>
+                                <p id="cart_list2">Rs. 1,199</p>
+                                <button class="btn btn-dark" onclick="additem('add1')" class="modal-btn">Add Item</button>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-body modal1111">
+                        <div class="row modal1">
+                            <div class="col-6 modal11">
+                                <img src="../images/j.jpg" class="modal-img1" id="cart_list3">
+                            </div>
+                            <div class="col-6 modal12">
+                                <h2 id="cart_list1">Gray Shirt</h2>
+                                <p id="cart_list2">Rs. 3,199</p>
+                                <button class="btn btn-dark" onclick="additem('add2')" class="modal-btn">Add Item</button>
+                            </div>
+                        </div>
+                </div> 
+                <div class="modal-body modal1111">
+                        <div class="row modal1">
+                            <div class="col-6 modal11">
+                                <img src="../images/k.jpg" class="modal-img1" id="cart_list3">
+                            </div>
+                            <div class="col-6 modal12">
+                                <h2 id="cart_list1">White Shirt</h2>
+                                <p id="cart_list2">Rs. 1,199</p>
+                                <button class="btn btn-dark" onclick="additem('add3')" class="modal-btn">Add Item</button>
+                            </div>
+                        </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+
+
+    <script src="../shop.js"></script>
+</body>
+</html>

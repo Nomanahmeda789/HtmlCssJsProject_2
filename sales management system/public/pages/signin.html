@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Merriweather|Pacifico|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="container-fluid mainn">  
+        <div class="conatiner main2">
+            <div class="signin">
+                <div class="signin1">
+                    <h1 class="signinheading">Sign In</h1>
+                    <h3 class="signinheading1">Admin | Employee </h3>
+                    <input type="text" id="signin-username" class="inp1" placeholder="Enter Your User Name" style="  margin: 20px auto;height: 50px;">
+                    <!-- <p class="war1" id="x11" style="margin-top:-15px;margin-bottom:-15px">* Username Invalid </p> -->
+                    <input type="password" id="signin-password" class="inp1" placeholder="Enter Your User Password" style="  margin: 20px auto;height: 50px;">
+                    <p class="war1" id="x12" style="margin-top:-15px;margin-bottom:-15px">*username or Password Invalid <br><br></p>
+                    
+                    <p style="color:gray;font-weight:bold;float:left;margin-left:45px">Signning In as :</p>
+                    <br><br>
+                   <label for="b1" style="float:left;margin-left:35px;font-weight:bold;color:gray;">
+                       <input type="radio" name="emp" value="admin" id="b1" class="b11" style="margin:auto"> ADMIN
+                   </label>
+                   <label for="b2" style="float:left;margin-left:45px;font-weight:bold;color:gray;">
+                       <input type="radio" name="emp" value="employee" id="b2" class="b11"> EMPLOYEE
+                   </label>
+                   <br><br>
+                   <p class="war1" id="x13" style="margin-top:-15px;margin-bottom:-15px">* please select the portal first </p>                   
+                   <!-- <p class="war1" id="x14" style="margin-top:-15px;margin-bottom:-15px">* please select the correct portal </p> -->
+                   <!-- <p class="war1" id="p13" style="margin-top:-15px;margin-bottom:-15px">*  </p>                                       -->
+                   <br>
+                   <button class="btn btn1" onclick="signin1()">
+                        Sign In
+                   </button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../signin.js"></script>
+</body>
+</html>

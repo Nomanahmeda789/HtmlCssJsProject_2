@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Merriweather|Pacifico|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container-fluid mainn">  
+        <div class="conatiner main2">
+            <div class="signin">
+                <div class="signin1">
+                    <h1 class="signinheading">Sign Up</h1>
+                   
+                    <input type="text" id="fname" class="inp1" placeholder="Enter Your Full Name">
+                    <p class="war1" id="p1">* length should be greater than 3 </p>
+                    <input type="text" id="username" class="inp1" placeholder="Enter Your User Name">
+                    <p class="war1" id="p2">* length should be greater than 3</p>                    
+                    <input type="email" id="email" class="inp1" placeholder="Enter Your Email">
+                    <p class="war1" id="p3">* Please enter valid Email </p>                    
+                    <input type="password" id="password" class="inp1" placeholder="Enter Your Password">
+                    <p class="war1" id="p4">* length should be greater than 6 </p>                    
+                    <input type="password" id="cpassword" class="inp1" placeholder="Retype Your password">
+                    <p class="war1" id="p5">* Your password does not match </p>                    
+                    <input type="date" id="date" class="inp1" placeholder="Select Your Date Of Birth">  
+                    <p class="war1" id="p6">* Please choose date </p>                 
+                    <p class="war1" id="p7">* Please select the gender </p>
+                    <div style="margin:10px 0px;">
+                        <span style="color:gray;font-weight:bold;float:left;margin-left:45px">Gender :</span>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" style="color:gray;font-weight:bold;margin:0px 50px;">
+                                <input type="radio" class="form-check-input" name="optradio" value="male" id="male">Male
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" style="color:gray;font-weight:bold;margin:0px 10px;">
+                                <input type="radio" class="form-check-input" name="optradio" value="female"  id="female">Female
+                            </label>
+                        </div>
+                    </div>
+                   <button class="btn btn1" onclick="signup()">
+                        Sign Up
+                   </button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../layout.js"></script>
+</body>
+</html>

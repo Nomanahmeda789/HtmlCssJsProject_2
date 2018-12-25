@@ -1,0 +1,71 @@
+body{
+    overflow-x:hidden; 
+}
+.abc{
+position: absolute;
+/* color: rebeccapurple; */
+top: 200px;
+right: 100px;
+color: white;
+background-color: brown;
+border: none;
+width: 70px;
+outline: none;
+height: 70px;
+border-radius: 50px;
+}
+.mm{
+/* border: 1px solid red; */
+display: inline-block;    
+height: 450px;    
+padding: 0px 50px 50px 100px;
+
+
+}
+.autop1{
+/* position: relative; */
+/* top:-165; */
+/* left:648; */
+margin: 55px 100px;
+background-color: gray;
+border: 1px solid lightgray;
+padding: 5px;
+color:white;
+}
+.nottoshow{
+    display: none;
+}
+.nn{
+margin:-50px auto;
+display: block;
+/* padding-top:30px;   */
+/* border:1px solid palevioletred; */
+position: absolute;
+right:10px;
+top:10px;
+}
+.btn1{
+    /* color:green; */
+    background-color: rgb(44, 207, 44);
+    margin: 0px;
+}
+.player{
+    display: inline-block;
+    margin-left: 80px;
+}
+.mybtn{
+    position: absolute;
+    /* bottom: 2%; */
+    top: 600px;
+}
+@media only Screen and (max-width:600px){
+   
+    .mm{
+        padding: 0px;
+        margin-bottom:100px; 
+    }
+}
+
+@media only Screen and (min-width:600px){
+    
+ }

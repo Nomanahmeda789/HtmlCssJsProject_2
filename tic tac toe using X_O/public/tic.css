@@ -1,0 +1,253 @@
+.sub_div1{
+    /* border: 1px solid purple; */
+    height: 70px; 
+    text-align: center;
+    padding-top:10px; 
+}
+.sub_div_img{
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid red; */
+    margin-top:-24px; 
+}
+
+.sub_div_heading{
+    /* border: 1px solid orange; */
+    width: 40%;
+    margin:10px; 
+    display: inline;
+    text-shadow: 2px 2px 2px black;
+}
+.sub_div2{
+     /* border: 1px solid red; */
+     /* background-color: red; */
+     height: 590px;
+     
+    padding: 20px 0px;
+    }
+.game_div{
+    /* border: 1px solid orange; */
+    height: 570px;
+    /* background-color: orange; */
+    width: 70%;
+
+}
+.g1,.g2,.g3{
+    width: 104%;
+    margin-left:-15px;
+    /* border: 1px solid purple;  */
+}
+.g1{
+    height:140px;    
+    background-color: #f4f4f4;
+    box-shadow: 1px 1px 5px lightgray;
+    border: 1px solid lightgray;
+}
+.g2{
+    height:350px;
+    background-color: #1fb7a3;  
+    border: 1px solid lightgray;
+      
+}
+.g3{
+    height:50px;    
+    background-color: #f4f4f4;
+    box-shadow: 1px 1px 5px lightgray;
+    border: 1px solid lightgray;
+}
+.g1_heading{
+    color: #848484;
+    /* border: 1px solid red; */
+    font-size: 1.5em;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px 5px 5px 40px;
+    font-weight: bold;
+}
+.g1_dr{
+    /* border: 1px solid red; */
+    height: 50px;
+    padding-top: 5px;
+}
+.g1_r{
+    /* border: 1px solid orange; */
+    height: 40px;
+    width: 57%;
+    margin: auto;
+}
+.g1_r1{
+    border: 1px solid lightgray;
+    margin:0px 5px;
+    box-shadow: 2px 2px 2px gray;    
+    background-color: white;
+}
+.g1_r2{
+    border: 1px solid lightgray;
+    margin:0px 5px;
+    background-color: white;    
+    box-shadow: 2px 2px 2px gray;    
+}
+.XO_text{
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 2em;
+    float: left;
+
+}
+.dash_text{
+
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 2em;
+    float: right;
+
+}
+
+.p_text{
+    text-align: center;
+    padding-top: 9px;
+    font-size: 0.8em;
+    color: grey;
+}
+.restart{
+    text-align: center;
+    font-weight: bolder;
+    width: 104%;
+    margin-left: -15px;
+    color: #1fb7a3;
+    text-decoration: none;
+    /* border: 1px solid red; */
+   display: block;
+   padding: 12px 0px;
+    /* transition: 0.2s; */
+    
+}
+.restart:hover{
+    color: #1fb7a3;
+    text-decoration: none;
+
+}
+.restart:active{
+    box-shadow: 1px 1px 5px gray;
+    
+}
+.act_div{
+    /* border: 1px solid red; */
+    height: 320px;
+    width: 49%;
+    margin: 13px auto;
+}
+.table_game{
+    /* background-color: red; */
+    width: 100%;
+    height: 320px;
+}
+.td11{
+    border-right:8px solid rgba(20, 158, 146,1);
+    border-bottom:8px solid rgba(20, 158, 146,1);
+}
+.td12{
+    border-bottom:8px solid rgba(20, 158, 146,1);
+}
+.td13{
+    border-left:8px solid rgba(20, 158, 146,1);
+    border-bottom:8px solid rgba(20, 158, 146,1);
+}
+.td21{
+    border-bottom:8px solid rgba(20, 158, 146,1);
+    border-right:8px solid rgba(20, 158, 146,1);
+}
+.td22{
+    border-bottom:8px solid rgba(20, 158, 146,1);
+    
+}
+.td23{
+    border-left:8px solid rgba(20, 158, 146,1);
+    border-bottom:8px solid rgba(20, 158, 146,1);
+}
+.td31{
+
+
+}
+.td32{
+    border-left:8px solid rgba(20, 158, 146,1);
+
+}
+.td33{
+    border-left:8px solid rgba(20, 158, 146,1);
+
+}
+.td11,.td12,.td13{
+    /* background-color: orange; */
+    width: 33%;
+    height: 100px;
+}
+
+.td21,.td22,.td23{
+    /* background-color: rgba(128, 0, 128, 0.541); */
+    width: 33%;
+    height: 100px;
+    
+}
+.td31,.td32,.td33{
+    /* background-color: firebrick; */
+    width: 33%;
+    height: 100px;
+    
+}
+.tictoe{
+    font-family:monospace;
+    font-size: 4.8em;
+    font-weight: bolder;
+    /* border: 1px solid red; */
+    text-align: center  ;
+    transition: 0.5s;
+    
+}
+.OO{
+    color: white;
+}
+#game_start_1{
+    border-bottom: 5px solid purple;
+
+}
+.cross{
+    text-decoration: line-through;
+}
+
+@media only Screen and (max-width:760px){
+   
+    .game_div{
+        width: 100%;
+        margin-left: 5%;
+    
+    }
+    .sub_div_heading{
+        font-size: 1.5em;
+        padding-top:30px; 
+    }
+    .sub_div_img{
+        width: 40px;
+        height: 40px;
+        margin-top: -10px;
+    }
+    .sub_div1{
+        width: 105%;
+        padding-top: 20px;
+    }
+    
+    .act_div{
+    width: 89%;
+    }
+    
+    .g1_r{
+        width: 80%;
+    }
+    .p_text{
+        font-size: 0.6em;
+    }
+}
+
+@media only Screen and (min-width:760px){
+    
+   }

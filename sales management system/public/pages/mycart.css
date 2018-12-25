@@ -1,0 +1,59 @@
+.payment{
+    width: 100%;
+    height: auto;
+}
+th{
+    color: gray;
+    padding-top: 30px !important;
+    border-bottom: 1px solid gray;
+    
+}
+.cart-img{
+    width:110px;
+    height: 130px;
+
+    border: 1px solid lightgray;
+     
+}
+.card-tex{
+    font-size: 1.3em;
+    color: gray;
+    padding: 10px;
+}
+.card-tex2{
+    font-size: 1.1em;
+    color: gray;
+    position: relative;
+    top:47px;
+}
+.tr2{
+    /* border-bottom: 1px solid gray; */
+    display: none;
+}
+.tr22{
+    border-bottom: 1px solid gray;
+    display:flex;
+}
+.total{
+    width:37%;
+    height: 150px;
+    /* background-color: red; */
+    float: right;
+    position: relative;
+    right: 13.5%;
+    border-bottom: 1px solid gray;;
+}
+@media only Screen and (max-width:1000px){
+   .card-tex{
+       font-size: 0.9em;
+   }
+   .card-tex2
+   {
+    font-size: 0.9em;
+  }
+}
+
+@media only Screen and (min-width:1000px){
+    
+   
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./style.css">   
+<title>Youtube Player</title>
+   
+</head>
+<body>
+    
+    
+    
+    
+    <video class="player" src="./a.mp4" poster="./faded.jpg" onended="nextvideo1()" width="590" height="460"
+    id="video1" controls load>
+    </video>
+    <!-- 1 -->
+    <div class="row list1" id="l1">       
+        <div class="col-md-8 col-sm-12  mm" >
+            <br>
+            <p>Autoplay</p>
+            <div class="btn-group ">
+                <button type="button" class="btn btn-primary" id="b11" onclick="autoplay1()">ON</button>
+                <button type="button"  id="b12"  onclick="autoplayoff1()" class="btn btn-primary">OFF</button>
+            </div> 
+        </div>
+
+        <div class="col-md-4 col-sm-12 nn" style="display:inline-block;height:600px;margin-top:20px;">
+            <!-- row 1 -->
+            <a href="#" style="text-decoration:none" onclick="video1('a.mp4','a11','a12','a13',1)">
+                <div class="row" style="margin:30px 0px;padding:5px;width:350px;background-color:lightgray" id="a11">
+                    <div class="col-5" >
+                        <img src="./faded.jpg" width="150px" height="120px" />
+                    </div>
+                    <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                        <b>Song 11 <br> By Alan walker</b>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- row 3 -->
+            <a href="#" style="text-decoration:none" onclick="video1('b.mp4','a13','a11','a12',2)">            
+            <div class="row" style="margin:30px 0px;padding:5px;width:350px" id="a13">
+                    <div class="col-5" >
+                        <img src="./thrills.jpg" width="150px" height="120px" />
+                    </div>
+                    <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                       <b>Song 12 <br> BY Anonymous </b>
+                    </div>
+            </div>
+            </a>
+             <!-- row 4 -->
+             <a href="#" style="text-decoration:none" onclick="video1('c.mp4','a12','a11','a13',0)">            
+                <div class="row" style="margin:30px 0px;padding:5px;width:350px" id="a12">
+                        <div class="col-5" >
+                            <img src="./des.jpeg" width="150px" height="120px" />
+                        </div>
+                        <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                           <b>Song 13 <br> BY Louis  </b>
+                        </div>
+                </div>
+             </a>
+        </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="row nottoshow" id="l2">       
+            <div class="col-md-8 col-sm-12  mm" >
+                <br>
+                <p>Autoplay</p>
+                <div class="btn-group ">
+                    <button type="button" class="btn btn-primary" id="b21" onclick="autoplay2()">ON</button>
+                    <button type="button"  id="b22"  onclick="autoplayoff2()" class="btn btn-primary">OFF</button>
+                </div> 
+            </div>
+    
+            <div class="col-md-4 col-sm-12 nn" style="display:inline-block;height:600px;margin-top:20px">
+                <!-- row 1 -->
+                <a href="#" style="text-decoration:none" onclick="video2('d.mp4','a21','a22','a23',1)">
+                    <div class="row" style="margin:30px 0px;padding:5px;width:350px;background-color:lightgray" id="a21">
+                        <div class="col-5" >
+                            <img src="./a2.png" width="150px" height="120px" />
+                        </div>
+                        <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                            <b>Song 21 <br> By Alan walker</b>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- row 3 -->
+                <a href="#" style="text-decoration:none" onclick="video2('e.mp4','a23','a21','a22',2)">            
+                <div class="row" style="margin:30px 0px;padding:5px;width:350px" id="a23">
+                        <div class="col-5" >
+                            <img src="./a4.png" width="150px" height="120px" />
+                        </div>
+                        <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                           <b>Song 22<br> BY Anonymous </b>
+                        </div>
+                </div>
+                </a>
+                 <!-- row 4 -->
+                 <a href="#" style="text-decoration:none" onclick="video2('g.mp4','a22','a21','a23',0)">            
+                    <div class="row" style="margin:30px 0px;padding:5px;width:350px" id="a22">
+                            <div class="col-5" >
+                                <img src="./a5.png" width="150px" height="120px" />
+                            </div>
+                            <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                               <b>Song 23 <br> BY Louis  </b>
+                            </div>
+                    </div>
+                 </a>
+            </div>
+        </div>
+    
+        <!-- 3 -->
+        <div class="row nottoshow" id="l3">       
+                <div class="col-md-8 col-sm-12  mm" >
+                  
+                    <br>
+                    <p>Autoplay</p>
+                    <div class="btn-group ">
+                        <button type="button" class="btn btn-primary" id="b31" onclick="autoplay3()">ON</button>
+                        <button type="button"  id="b32"  onclick="autoplayoff3()" class="btn btn-primary">OFF</button>
+                    </div> 
+                </div>
+        
+                <div class="col-md-4 col-sm-12 nn" style="display:inline-block;height:600px;margin-top:20px">
+                    <!-- row 1 -->
+                    <a href="#" style="text-decoration:none" onclick="video3('h.mp4','a31','a32','a33',1)">
+                        <div class="row" style="margin:30px 0px;padding:5px;width:350px;background-color:lightgray" id="a31">
+                            <div class="col-5" >
+                                <img src="./a1.png" width="150px" height="120px" />
+                            </div>
+                            <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                                <b>Song 31 <br> By Alan walker</b>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- row 3 -->
+                    <a href="#" style="text-decoration:none" onclick="video3('i.mp4','a33','a31','a32',2)">            
+                    <div class="row" style="margin:30px 0px;padding:5px;width:350px" id="a33">
+                            <div class="col-5" >
+                                <img src="./a6.png" width="150px" height="120px" />
+                            </div>
+                            <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                               <b>Song 32 <br> BY Anonymous </b>
+                            </div>
+                    </div>
+                    </a>
+                     <!-- row 4 -->
+                     <a href="#" style="text-decoration:none" onclick="video3('j.mp4','a32','a31','a33',0)">            
+                        <div class="row" style="margin:30px 0px;padding:5px;width:350px" id="a32">
+                                <div class="col-5" >
+                                    <img src="./a3.png" width="150px" height="120px" />
+                                </div>
+                                <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                                    <b>Song 33 <br> BY Louis  </b>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 4 -->
+                <div class="row nottoshow" id="l4">       
+                    <div class="col-md-8 col-sm-12  mm" >
+                        <br>
+                        <p>Autoplay</p>
+                        <div class="btn-group ">
+                            <button type="button" class="btn btn-primary" id="b41" onclick="autoplay4()">ON</button>
+                            <button type="button"  id="b42"  onclick="autoplayoff4()" class="btn btn-primary">OFF</button>
+                        </div> 
+                    </div>
+            
+                    <div class="col-md-4 col-sm-12 nn" style="display:inline-block;height:600px;margin-top:20px">
+                        <!-- row 1 -->
+                        <a href="#" style="text-decoration:none" onclick="video4('j.mp4','a41','a42','a43',1)">
+                            <div class="row" style="margin:30px 0px;padding:5px;width:350px;background-color:lightgray" id="a41">
+                                <div class="col-5" >
+                                    <img src="./a3.png" width="150px" height="120px" />
+                                </div>
+                                <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                                    <b>Song 41<br> By Alan walker</b>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <!-- row 3 -->
+                        <a href="#" style="text-decoration:none" onclick="video4('g.mp4','a43','a41','a42',2)">            
+                        <div class="row" style="margin:30px 0px;padding:5px;width:350px" id="a43">
+                                <div class="col-5" >
+                                    <img src="./a5.png" width="150px" height="120px" />
+                                </div>
+                                <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                                   <b>Song 42 <br> BY Anonymous </b>
+                                </div>
+                        </div>
+                        </a>
+                         <!-- row 4 -->
+                         <a href="#" style="text-decoration:none" onclick="video4('c.mp4','a42','a41','a43',0)">            
+                            <div class="row" style="margin:30px 0px;padding:5px;width:350px" id="a42">
+                                    <div class="col-5" >
+                                        <img src="./des.jpeg" width="150px" height="120px" />
+                                    </div>
+                                    <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                                       <b>Song 43 <br> BY Louis  </b>
+                                    </div>
+                            </div>
+                         </a>
+                    </div>
+                </div>
+                
+                <!-- 5 -->
+                <div class="row nottoshow" id="l5">       
+                        <div class="col-md-8 col-sm-12  mm" >
+                            <br>
+                            <p>Autoplay</p>
+                            <div class="btn-group ">
+                                <button type="button" class="btn btn-primary" id="b51" onclick="autoplay5()">ON</button>
+                                <button type="button"  id="b52"  onclick="autoplayoff5()" class="btn btn-primary">OFF</button>
+                            </div> 
+                        </div>
+                
+                        <div class="col-md-4 col-sm-12 nn" style="display:inline-block;height:600px;margin-top:20px">
+                            <!-- row 1 -->
+                            <a href="#" style="text-decoration:none" onclick="video5('e.mp4','a51','a52','a53',1)">
+                                <div class="row" style="margin:30px 0px;padding:5px;width:350px;background-color:lightgray" id="a51">
+                                    <div class="col-5" >
+                                        <img src="./a4.png" width="150px" height="120px" />
+                                    </div>
+                                    <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                                        <b>Song 51<br> By Alan walker</b>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <!-- row 3 -->
+                            <a href="#" style="text-decoration:none" onclick="video5('i.mp4','a53','a51','a52',2)">            
+                            <div class="row" style="margin:30px 0px;padding:5px;width:350px" id="a53">
+                                    <div class="col-5" >
+                                        <img src="./a6.png" width="150px" height="120px" />
+                                    </div>
+                                    <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                                       <b>Song 52 <br> BY Anonymous </b>
+                                    </div>
+                            </div>
+                            </a>
+                             <!-- row 4 -->
+                             <a href="#" style="text-decoration:none" onclick="video5('h.mp4','a52','a51','a53',0)">            
+                                <div class="row" style="margin:30px 0px;padding:5px;width:350px" id="a52">
+                                        <div class="col-5" >
+                                            <img src="./a1.png" width="150px" height="120px" />
+                                        </div>
+                                        <div class="col-7" style="margin-top:10px;padding-left:30px;">
+                                           <b>Song 53 <br> BY Louis  </b>
+                                        </div>
+                                </div>
+                             </a>
+                        </div>
+                    </div>
+                
+
+    <div class="mybtn">
+        <button type="button" class="btn btn-primary" style="margin-left:80px;" onclick="videolist(1,'a11','a12','a13','a.mp4','./faded.jpg','nextvideo1()','video1')">Link 1</button>
+        <button class="btn btn-primary" onclick="videolist(2,'a21','a22','a23','d.mp4','./a2.png','nextvideo2()','video2')">Link 2</button>
+        <button class="btn btn-primary" onclick="videolist(3,'a31','a32','a33','h.mp4','./a1.png','nextvideo3()','video3')">Link 3</button>
+        <button class="btn btn-primary" onclick="videolist(4,'a41','a42','a43','j.mp4','./a3.png','nextvideo4()','video4')">Link 4</button>
+        <button class="btn btn-primary" onclick="videolist(5,'a51','a52','a53','e.mp4','./a4.png','nextvideo5()','video5')">Link 5</button>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+        <script src="script.js"></script>
+</body>
+</html>

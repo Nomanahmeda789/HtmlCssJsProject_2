@@ -1,0 +1,88 @@
+.nav_div{
+    height: 60px;
+    text-align: center
+}
+.heading_text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.8em;
+    letter-spacing: 3px;
+    /* word-spacing: 10px; */
+    text-shadow: 3px 3px 5px gray;
+}
+.card_div{
+    /* background-color: blue; */
+    width: 100%;
+    /* margin-top: 10px; */
+    height: 600px;
+    background-color: #8cb7ff;
+}
+.row1{
+    /* border: 1px solid gold; */
+    margin: auto;
+    padding: 20px ;
+    height: 600px
+}
+.column1{
+    /* border: 1px solid black; */
+    margin: 0px;
+    height: 540px;
+    margin: 10px;
+    box-shadow: 5px 5px 15px gray;
+    background-color: rgba(255,255,255,0.9);
+    
+}
+.game_div{
+    width: 80%;
+    height: 470px;
+    margin: 35px auto 35px auto;
+    /* border: 1px solid red; */
+}
+
+.ra{
+    width: 100%;
+    height: 156px;
+    /* border: 1px solid orange; */
+    margin-left:0px;
+    margin: 4px;    
+     
+
+}
+#c1,#c2,#c3,#c4,#c5,#c6,#c7,#c8,#c9{
+    width: 32.3%;
+    height: 156px;
+    margin: 2px;    
+    /* padding-top: -70px; */
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 2px gray;
+}
+.numbers_of_game{
+    font-size: 6em;
+    text-align: center;
+    /* margin-bottom: 30px; */
+    background-color: #9de892;
+    transition: 0.5s;
+    /* padding-bottom: -60px important!; */
+    /* position: absolute;   */
+}
+.cll{
+    color: red;
+    font-size: 3.0em;
+    text-align: center;
+    padding-top: 170px;
+    text-shadow: 3px 3px 5px black;
+    font-weight: bold;
+    /* background-color: aqua; */
+    transition:5s;
+}
+@media only Screen and (max-width:1200px){
+    .cll{
+        font-size: 2.2em; 
+    }
+    
+}
+
+@media only Screen and (min-width:1200px){
+    .cll{
+        font-size: 3.0em; 
+    }
+}
